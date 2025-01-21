@@ -1,4 +1,4 @@
-Pizza Hut Sales Project
+Pizza Hut Sales Analysis
 
 Overview:
 The project involves analyzing Pizza Hut sales data using SQL to identify key trends and optimize sales strategies.
