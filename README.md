@@ -1,14 +1,14 @@
-## Pizza Hut Sales Analysis
+# Pizza Hut Sales Analysis
 
-# Overview:
+## Overview:
 The project involves analyzing Pizza Hut sales data using SQL to identify key trends and optimize sales strategies.
 Focused on querying, aggregating, and interpreting data to support decision-making.
 
-# Objective:
+## Objective:
 Drive sales performance and improve business strategies by uncovering insights from historical sales data.
 Enhance understanding of customer preferences and optimize menu offerings.
 
-# Key Insights:
+## Key Insights:
 Analyzed over 10 complex SQL queries to uncover:
 Popular menu items (e.g., Margherita, Veggie Delight, Pepperoni Pizza).
 Sales trends across different timeframes or locations.
