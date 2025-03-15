@@ -119,10 +119,11 @@ The analysis supported effective business strategy development, resulting in imp
                 orders.order_date, SUM(order_details.quantity) AS quantity
            FROM
                 orders
-           JOIN order_details ON orders.order_id = order_details.order_id
-           GROUP BY orders.order_date) AS order_quantity;
+                   JOIN
+                order_details ON orders.order_id = order_details.order_id
+            GROUP BY orders.order_date) AS order_quantity;
 
-10. **Determine the top 3 most ordered pizza types based on revenue**:
+11. **Determine the top 3 most ordered pizza types based on revenue**:
 
         SELECT 
             pizza_types.name,
@@ -137,7 +138,7 @@ The analysis supported effective business strategy development, resulting in imp
         ORDER BY revenue DESC
         LIMIT 3;
 
-11. **Calculate the percentage contribution of each pizza type to total revenue**:    
+12. **Calculate the percentage contribution of each pizza type to total revenue**:    
 
         SELECT 
             pizza_types.category,
@@ -158,7 +159,7 @@ The analysis supported effective business strategy development, resulting in imp
         GROUP BY pizza_types.category
         ORDER BY revenue_percent DESC;
 
-12. **Analyze the cumulative revenue generated over time**:
+13. **Analyze the cumulative revenue generated over time**:
 
         SELECT 
             order_date,
@@ -173,7 +174,7 @@ The analysis supported effective business strategy development, resulting in imp
             ON orders.order_id = order_details.order_id
         GROUP BY orders.order_date) as sales;    
 
-13. **Determine the top 3 most ordered pizza types based on revenue for each pizza category**:
+14. **Determine the top 3 most ordered pizza types based on revenue for each pizza category**:
 
         SELECT name, revenue from
              (SELECT category, name, revenue,
